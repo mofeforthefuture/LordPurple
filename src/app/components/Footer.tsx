@@ -99,6 +99,9 @@ export function Footer() {
               <Link to="/gallery" className="hover:text-[#D4AF37] transition-colors">
                 Shop
               </Link>
+              <Link to="/cart" className="hover:text-[#D4AF37] transition-colors">
+                Cart
+              </Link>
               <Link to="/about" className="hover:text-[#D4AF37] transition-colors">
                 Story
               </Link>

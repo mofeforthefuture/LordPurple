@@ -1,5 +1,7 @@
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { Link } from 'react-router';
 import { ArrowRight } from 'lucide-react';
+
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Hero() {
   return (
@@ -39,19 +41,19 @@ export function Hero() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="#booking"
+            <Link
+              to="/booking"
               className="inline-flex items-center justify-center px-10 py-5 bg-[#7B3F8F] hover:bg-[#5B2C6F] text-white transition-all duration-300 group"
             >
               <span className="text-lg tracking-wide">Book a Fitting</span>
               <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a
-              href="#collection"
+            </Link>
+            <Link
+              to="/gallery"
               className="inline-flex items-center justify-center px-10 py-5 border-2 border-white/30 hover:border-[#D4AF37] hover:bg-white/5 text-white backdrop-blur-sm transition-all duration-300"
             >
-              <span className="text-lg tracking-wide">View Collection</span>
-            </a>
+              <span className="text-lg tracking-wide">Shop suits</span>
+            </Link>
           </div>
         </div>
       </div>

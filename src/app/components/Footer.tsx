@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { Instagram, Facebook, Twitter } from 'lucide-react';
 
 export function Footer() {
@@ -94,9 +95,22 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <p>© 2026 Lord Purple Bespoke Wears. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-[#D4AF37] transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-[#D4AF37] transition-colors">Terms of Service</a>
+            <div className="flex flex-wrap gap-6 justify-center md:justify-end">
+              <Link to="/gallery" className="hover:text-[#D4AF37] transition-colors">
+                Shop
+              </Link>
+              <Link to="/about" className="hover:text-[#D4AF37] transition-colors">
+                Story
+              </Link>
+              <Link to="/booking" className="hover:text-[#D4AF37] transition-colors">
+                Book
+              </Link>
+              <a href="#" className="hover:text-[#D4AF37] transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-[#D4AF37] transition-colors">
+                Terms of Service
+              </a>
             </div>
           </div>
         </div>
